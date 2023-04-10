@@ -1,7 +1,7 @@
 import express from "express";
 const router = express.Router();
 import { resturentupload } from "../middlewares/multer.js";
-import { createResturent,getallresturent,getresturentbyId,editresturent,deleteResturent,getresturentcount,updateResturentprofile } from "../controllers/ResturentController.js";
+import { createResturent,getallresturent,getresturentbyId,editresturent,deleteResturent,getresturentcount,updateResturentprofile } from "../controllers/resturentController.js";
 
 router.route("/resturents/create").post(resturentupload,createResturent);
 router.route("/resturents").get(getallresturent);
