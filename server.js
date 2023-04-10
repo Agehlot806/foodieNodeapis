@@ -26,7 +26,7 @@ nodeCron.schedule("0 0 0 5 * *", async () => {
   // };
   // temp();
 
-const PORT = process.env.PORT || 6000;
+const PORT = process.env.PORT || 3030;
 app.listen(PORT,()=> {
     console.log(`server is listening on port ${PORT}`)
 })
